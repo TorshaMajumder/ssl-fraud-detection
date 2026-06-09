@@ -29,10 +29,6 @@ def main(config):
     st.title("🛡️ The Financial Guardian")
     st.subheader("Real-time SSL Anomaly Detection & Human Feedback Loop")
 
-    # # Secrets (Add these to your sidebar or use st.secrets)
-    # URL = "YOUR_SUPABASE_URL"
-    # KEY = "YOUR_SERVICE_ROLE_KEY"
-    # GROQ_KEY = "YOUR_GROQ_API_KEY"
 
     supabase = create_client(config["supabase_url"], config["supabase_key"])
     groq_client = Groq(api_key=config["GROQ_API_KEY"])
@@ -79,7 +75,7 @@ def main(config):
                     # Use Groq to explain the concept
                     prompt = f"""
                     Analyze this transaction: {selected_txn['merchant']} for ${selected_txn['amount']}.
-                    The SSL model flagged it because its Euclidean distance from the user's 
+                    The Self Supervised learning (SSL) model flagged it because its Euclidean distance from the user's 
                     behavioral anchor was significant. 
                     Explain why behavioral-based detection is better than simple rules for this case.
                     """
