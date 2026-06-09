@@ -1,4 +1,3 @@
-
 # 🛡️ NeuralAudit: SSL-Powered Fraud Detection
 
 **NeuralAudit** is a high-performance anomaly detection system designed to identify fraudulent financial transactions using **Self-Supervised Learning (SSL)** and **Vector Similarity Search**. Unlike rule-based systems, NeuralAudit learns a user's behavioral "representation" in a latent space, flagging zero-day fraud attempts that deviate from their unique mathematical "force field."
@@ -38,6 +37,8 @@
   <video src="YOUR_DRAGGED_LINK_HERE" width="100%" autoplay loop muted playsinline></video>
 
   <br/>
+
+[Streamlit App](https://github.com/user-attachments/assets/29bc1796-3172-4b3d-944f-af0b1bc3962d)
 
 </div>
 
